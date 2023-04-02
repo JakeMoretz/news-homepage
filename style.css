@@ -5,7 +5,6 @@
 body {
     height: 100vh;
     display: grid;
-    /* place-items: center; */
     justify-content: center;
     align-items: center;
 }
@@ -24,7 +23,7 @@ body {
     grid-column: 1 / 4;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
 
 .navBtns button {
@@ -80,7 +79,7 @@ body {
     grid-row: 2/4;
     display: grid;
     grid-template-rows: 10%;
-    background-color: rgb(22, 29, 54);  
+    background-color: rgb(22, 29, 54);
 }
 
 .section {
@@ -163,13 +162,12 @@ hr {
 .bottomCard3 {
     grid-column: 3/4;
     display: flex;
-    margin-top: 50px;  
+    margin-top: 50px;
 }
 
 .bottomCard3 img {
     height: 150px;
     width: 120px;
-    
 }
 
 .card3 {
@@ -187,16 +185,46 @@ hr {
     color: rgb(0, 0, 0, 0.6);
 }
 
-.card {
-    min-height: 150px;
-}
-
-
 .attribution {
     grid-column: 1/4;
     justify-self: center;
     align-self: center;
 }
 
+.mobile-toggle {
+    visibility: hidden;
+}
 
-@media screen (max-width 1450px)
+/* creating styles for hamburger menu */
+@media (max-width: 1450px) {
+    .navBtns {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 70%;
+        background-color: rgb(0, 0, 0, 0.5);
+        backdrop-filter: blur(0.5rem);
+        display: flex;
+        flex-direction: column;
+        padding: 10rem 2rem;
+        transform: translateX(100%);
+    }
+
+    .navBtns [data-visible='true']{
+        transform: translateX(0%);
+
+    }
+
+
+    .mobile-toggle {
+        position: absolute;
+        background: url(./assets/images/hamburger_icon\ .svg);
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+        z-index: 9999;
+        top: 3rem;
+        right: 2rem;
+        border: none;
+        visibility: visible;
+    }
+}
