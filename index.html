@@ -25,7 +25,16 @@
         <div class="pageContainer">
             <div class="navbar">
                 <img src="./assets/images/logo.svg" alt="logo img" />
-                <div class="navBtns">
+
+                <button
+                    class="mobile-toggle"
+                    aria-controls="nav-buttons"
+                    aria-expanded="false"
+                >
+                    <span class=".sr-only"></span>
+                </button>
+
+                <div id="nav-buttons" data-visible="false" class="navBtns">
                     <button class="home">Home</button>
                     <button class="new">New</button>
                     <button class="popular">Popular</button>
@@ -124,5 +133,6 @@
                 >Jake Moretz</a
             >.
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
