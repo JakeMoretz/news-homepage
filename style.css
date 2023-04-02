@@ -5,7 +5,9 @@
 body {
     height: 100vh;
     display: grid;
-    place-items: center;
+    /* place-items: center; */
+    justify-content: center;
+    align-items: center;
 }
 
 .pageContainer {
@@ -22,7 +24,7 @@ body {
     grid-column: 1 / 4;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
 }
 
 .navBtns button {
@@ -78,7 +80,7 @@ body {
     grid-row: 2/4;
     display: grid;
     grid-template-rows: 10%;
-    background-color: rgb(22, 29, 54);
+    background-color: rgb(22, 29, 54);  
 }
 
 .section {
@@ -104,6 +106,7 @@ hr {
     grid-column: 1/2;
     grid-row: 4/5;
     display: flex;
+    margin-top: 50px;
 }
 
 .bottomCard1 h3 {
@@ -134,6 +137,7 @@ hr {
     grid-column: 2/3;
     grid-row: 4/5;
     display: flex;
+    margin-top: 50px;
 }
 
 .bottomCard2 img {
@@ -159,11 +163,13 @@ hr {
 .bottomCard3 {
     grid-column: 3/4;
     display: flex;
+    margin-top: 50px;  
 }
 
 .bottomCard3 img {
     height: 150px;
     width: 120px;
+    
 }
 
 .card3 {
@@ -180,8 +186,17 @@ hr {
 .card3 p {
     color: rgb(0, 0, 0, 0.6);
 }
+
+.card {
+    min-height: 150px;
+}
+
+
 .attribution {
     grid-column: 1/4;
     justify-self: center;
     align-self: center;
 }
+
+
+@media screen (max-width 1450px)
