@@ -6,9 +6,7 @@ hamburger.addEventListener("click", () => {
 
     if (visibility === "false") {
         primaryNav.setAttribute("data-visible", true);
-        
-       
-        
-        console.log(visibility);
+    } else if (visibility === "true") {
+        primaryNav.setAttribute('data-visible', false);
     }
 });
