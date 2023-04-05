@@ -1,15 +1,16 @@
-
 @media (max-width: 1450px) {
     .navBtns {
         position: fixed;
         z-index: 1000;
         inset: 0 0 0 70%;
-        background-color: rgb(0, 0, 0, 0.5);
-        backdrop-filter: blur(0.5rem);
+        background-color: rgba(255, 255, 255);
+        /* backdrop-filter: blur(0.5rem); */
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         padding: 10rem 2rem;
         transform: translateX(100%);
+        font-size: 1.5em;
     }
 
     div [data-visible="true"] {
@@ -21,8 +22,8 @@
         background: url(./assets/images/hamburger.png);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
         z-index: 9999;
         border: none;
         cursor: pointer;
@@ -67,9 +68,9 @@
     }
 
     .attribution {
-       grid-row: 7/8;
-       grid-column: 1/5;
-       justify-self: center;
+        grid-row: 7/8;
+        grid-column: 1/5;
+        justify-self: center;
     }
 }
 
@@ -77,10 +78,16 @@
 @media (max-width: 953px) {
     .pageContainer {
         display: grid;
+        grid-template-rows: 1fr 50% 20% 1fr 1fr 1fr 20%;
+    }
+
+    .navBtns {
+        inset: 0 0 0 50%;
     }
 
     .mainImg {
         background-image: url(./assets/images/image-web-3-mobile.jpg);
+        background-size: cover;
         grid-column: 1/5;
     }
 
@@ -122,8 +129,14 @@
 
     .attribution {
         grid-row: 9/10;
-
     }
 }
 
 /* get new hamburger img */
+@media (max-width: 500px) {
+    .mainImg {
+        background-image: url(./assets/images/image-web-3-mobile.jpg);
+        background-size: contain;
+        grid-column: 1/5;
+    }
+}
