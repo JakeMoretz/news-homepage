@@ -6,7 +6,15 @@ hamburger.addEventListener("click", () => {
 
     if (visibility === "false") {
         primaryNav.setAttribute("data-visible", true);
+        hamburger.style.backgroundImage = "url(./assets/images/close-icon.png)";
+        hamburger.style.backgroundSize = "cover";
+        hamburger.style.width = "50px";
+        hamburger.style.height = "40px";
     } else if (visibility === "true") {
-        primaryNav.setAttribute('data-visible', false);
+        primaryNav.setAttribute("data-visible", false);
+        hamburger.style.backgroundImage = "url(./assets/images/hamburger.png)";
+        hamburger.style.backgroundSize = "contain";
+        hamburger.style.height = "30px";
+        hamburger.style.width = "30px";
     }
 });
