@@ -31,8 +31,13 @@ body {
     margin-right: 25px;
     border: none;
     background-color: white;
-    font-size: 1em;
+    font-size: 1.1em;
     color: rgb(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.navBtns button:hover {
+    color: rgb(234, 77, 77);
 }
 
 .mobile-toggle {
@@ -47,11 +52,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     align-content: stretch;
-    
 }
 
 .mainImg > img {
-    object-fit: cover; 
+    object-fit: cover;
     width: 100%;
 }
 
@@ -76,6 +80,11 @@ body {
     font-size: 1.3em;
     color: white;
     border: none;
+}
+
+.read:hover {
+    background-color: rgb(22, 29, 54);
+    cursor: pointer;
 }
 
 .sideBar h1 {
@@ -110,6 +119,11 @@ hr {
 .sideBar h3 {
     font-size: 1.2em;
     color: white;
+    cursor: pointer;
+}
+
+.sideBar h3:hover {
+    color: rgb(227, 175, 17);
 }
 
 .bottomCard1 {
@@ -131,6 +145,11 @@ hr {
 
 .title {
     font-size: 1.1em;
+}
+
+.title:hover {
+    color: rgb(234, 77, 77);
+    cursor: pointer;
 }
 
 .card1 {
@@ -197,12 +216,9 @@ hr {
 }
 
 .attribution {
- grid-row: 5/6;
- grid-column: 1/4;
- height: 100px;
- justify-self: center;
-padding-top: 50px;
- 
- 
-
+    grid-row: 5/6;
+    grid-column: 1/4;
+    height: 100px;
+    justify-self: center;
+    padding-top: 50px;
 }
